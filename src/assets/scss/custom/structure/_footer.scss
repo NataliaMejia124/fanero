@@ -1,0 +1,104 @@
+//
+// _footer.scss
+//
+
+.footer {
+  bottom: 0;
+  padding: 20px calc(#{$grid-gutter-width} / 2);
+  position: absolute;
+  right: 0;
+  color: $footer-color;
+  left: 250px;
+  height: $footer-height;
+  background-color: $footer-bg;
+}
+
+.basicInfo {
+  font-size: 1rem;
+}
+
+@media (max-width: 992px) {
+  .footer {
+    left: 0;
+  }
+}
+
+// Enlarge menu
+.vertical-collpsed {
+  .footer {
+    left: $sidebar-collapsed-width;
+  }
+}
+
+body[data-layout="horizontal"] {
+  .footer {
+    left: 0 !important;
+  }
+}
+
+.footer-link {
+  color: $header-item-color;
+
+  &:hover {
+    color: $header-item-color;
+    text-decoration: underline !important;
+  }
+}
+
+.footer-menu {
+  bottom: 0;
+  left: 12px;
+  position: fixed;
+  z-index: 2;
+  background: #d6d4d4;
+  width: 100%;
+  height: 3rem;
+  padding: 5px 0;
+  border-top: solid black;
+  border-top: solid #888888 5px;
+
+  .menu-item {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAABYlAAAWJQFJUiTwAAACvElEQVR4nO3cv2sUQRjG8dc7i6BHCIJaiGhheaD2WcwfYJE/QNDSKqbXxkJrfxQ2CmnEwkosbU72OpsIWgUTsYtYiESwiSd7zCvLzh3ZvWd25mV5vrDFzS1k9pPNkd0d7thkMhG2eD3aYREQjIBgBAQjIBgBwQgIRkAwAoIREOy41Yll2eqKiGy5l7fyfPzT28lAJq+FHd5IRC67oY8ismYR0dyfcBnv0sUzUmwOcuTeM5UpwCre0wc3pptlRDOAs/AGJ5emm2VEE4Dz8DTLiMkBj8LTrCImBayLp1lETAbYFE+zhpgEcFE8zRJidEAUT6si9vu9PAViVMBQeFoZ8fDw7zAFYjTA4sCKAwyFp6VGjAKoeMUBhsTTUiK2Dtg2npYKsVXAWHhaCsTWAGPjabERWwFMhafFRAwOmBpPi4UYFNAKnhYDMRigNTytbcQggFbxtDYR4YdK5cuzleUT8urZbVN45Q5+/5Gbd57L9x+/itFPxfTRB1XQGVh9enb+3CmzeOLOxLOnl/XlMMRdnIUBK3jFY0fp9+w/py/N8UuIW2ELHfEMvDVvJ/tturlDiI0BZ+FZXTVwRAfuFw8hNgLsEN40N3cIsTZg1/A0FLHJGbjZNTxtBuKWt9OcmgAWZ9/9ruFpJcQ3IvLV22FOtZe35fl45BA7m0Ncb3J8XGAJRkAwAoIlX+L75MU72dnd98brNBgsyd2N60mvv5MDvn77wRtr0s7evlwdXog97f9ZWWT+Ps/Hja6ns2y1+I/gmvdG5PgZCEZAMAKCERCMgGAEBCMgGAHBCAhGQDACghEQjIBgBAQjIBgBwQgIRkCwoLf0tz9/k2z9oTfeZhv3Xkb9edVCAj4WkSveaL1qr0UpVazVeeSN1mvbrbSA45fQgvEzEIyAYAQEIyAYAcEICEZAMAKCERCMgEgi8g/OZlg/X92hGwAAAABJRU5ErkJggg==);
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .home {
+    background-image: url("../../../images/InicioI.png");
+    &.active {
+      background-image: url("../../../images/InicioA.png");
+    }
+  }
+
+  .near {
+    background-image: url("../../../images/CercanosI.png");
+    &.active {
+      background-image: url("../../../images/CercanosA.png");
+    }
+  }
+
+  .search {
+    background-image: url("../../../images/BuscarI.png");
+    &.active {
+      background-image: url("../../../images/BuscarA.png");
+    }
+  }
+
+  .favorites {
+    background-image: url("../../../images/FavoritosI.png");
+    &.active {
+      background-image: url("../../../images/FavoritosA.png");
+    }
+  }
+
+  .shopping-cart {
+    background-image: url("../../../images/CarritoI.png");
+    &.active {
+      background-image: url("../../../images/CarritoA.png");
+    }
+  }
+}

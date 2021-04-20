@@ -1,0 +1,23 @@
+@import "../../assets/scss/theme.scss";
+
+.apexcharts-canvas {
+    text {
+        fill: $text-muted !important;
+    }
+}
+/*
+.CarouselBusiness{
+   
+    .rec-arrow-right:hover{
+        background-color: #dc3545 !important;
+    }
+    .rec-arrow-left:hover{
+        background-color: #dc3545 !important;
+    }
+}
+*/
+#IconBusiness{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}

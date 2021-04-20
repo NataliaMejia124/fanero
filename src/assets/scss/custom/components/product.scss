@@ -1,0 +1,41 @@
+.product-image {
+  display: inline-block;
+  height: 210px;
+  overflow: hidden;
+  width: 100%;
+
+  &img {
+    height: 100%;
+    display: block;
+    margin: auto;
+  }
+}
+
+.favorite{
+  border-radius: 50%;
+  background-color: #fff; //Usar una variable
+  position: absolute;
+  font-size: 1.5em;
+  z-index: 1;
+  right: 0;
+  color: #fd6668;
+  transition: font-size 0.3s, color 0.3s;
+
+  &:hover{
+    color: #ea4f59;
+    font-size: 2em;
+  }
+}
+.fav{
+  border-radius: 50%;
+  background-color: rgb(236, 82, 82); //Usar una variable
+  position: absolute;
+  font-size: 1.5em;
+  z-index: 1;
+  right: 0;
+  color: #fd6668;
+  transition: font-size 0.3s, color 0.3s;
+}
+.card {
+  height: 25rem;
+}

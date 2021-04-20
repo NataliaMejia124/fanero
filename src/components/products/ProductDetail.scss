@@ -1,0 +1,41 @@
+.blue {
+    background: black;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.6em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.6em; 
+  }
+  
+.circulo {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+	background: #5178D0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.image-gallery {
+  width: 100%;
+  height: auto;
+}
+.image-gallery-slide img {
+  width: 100%;
+  height: 350px;
+  max-height: 80vh;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center center;
+}
+.fullscreen .image-gallery-slide img {
+  max-height: 100vh;
+  height: auto !important;
+}

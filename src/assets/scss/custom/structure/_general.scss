@@ -1,0 +1,13 @@
+.separator {
+    background-color: #ea4f59; //TODO:Pasar este color a variables cuando se tenga la paleta de colores
+    height: 5px;
+}
+
+.link{
+    color:$header-dark-bg;
+
+    &:hover{
+        color:$header-dark-bg;
+        text-decoration: underline !important;
+    }
+}
